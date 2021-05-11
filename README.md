@@ -6,6 +6,10 @@ This Kata was originally created by Terry Hughes (http://twitter.com/TerryHughes
 
 The simplest way is to just clone the code and start hacking away improving the design. You'll want to look at the ["Gilded Rose Requirements"](https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/master/GildedRoseRequirements.txt) which explains what the code is for. I strongly advise you that you'll also need some tests if you want to make sure you don't break the code while you refactor.
 
+## The Goal of this Kata
+
+The goal of this Kata is to give you an opportunity to analyze the requirements (linked below) and make updates to the code using TDD to make it cleaner. A sample JUnit test has been provided as a generic template, however you will need to write all of the test cases pertaining to the business logic outlined in the requirements.
+
 ### Gilded Rose Requirements in other languages 
 
 - [English](GildedRoseRequirements.txt)
