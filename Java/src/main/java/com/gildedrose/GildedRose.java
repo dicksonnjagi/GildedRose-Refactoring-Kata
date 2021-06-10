@@ -13,7 +13,15 @@ class GildedRose {
                     && !items[i].name.equals("Backstage passes to a TAFKAL80ETC concert")) {
                 if (items[i].quality > 0) {
                     if (!items[i].name.equals("Sulfuras, Hand of Ragnaros")) {
-                        items[i].quality = items[i].quality - 1;
+                        // if the item name is not Conjured Mana Cake then reduce by 1
+                        if(!items[i].name.equals("Conjured Mana Cake")) {
+                            items[i].quality = items[i].quality - 1;
+                        }
+                        // condition to check if the quality is Conjured Mana Cake
+                        else {
+                            // quality of Conjured Mana Cake reduces 2s as much as normal items hence reducing by 2
+                            items[i].quality = items[i].quality - 2;
+                        }
                     }
                 }
             } else {
@@ -45,7 +53,17 @@ class GildedRose {
                     if (!items[i].name.equals("Backstage passes to a TAFKAL80ETC concert")) {
                         if (items[i].quality > 0) {
                             if (!items[i].name.equals("Sulfuras, Hand of Ragnaros")) {
-                                items[i].quality = items[i].quality - 1;
+                                // if the item name is not Conjured Mana Cake then reduce further by 1 if sell by date
+                                // has passed
+                                if(!items[i].name.equals("Conjured Mana Cake")) {
+                                    items[i].quality = items[i].quality - 1;
+                                }
+                                // condition to check if the quality is Conjured Mana Cake
+                                else {
+                                    // quality of Conjured Mana Cake reduces even further by 2 if the sell by date
+                                    // has passed
+                                    items[i].quality = items[i].quality - 2;
+                                }
                             }
                         }
                     } else {
